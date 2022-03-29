@@ -191,4 +191,3 @@ void deleteObject(BaseManager* userManager)
 {
 	delete userManager;
 }
-

@@ -111,7 +111,8 @@ ATSModelManager::start()
 	airThreat = new AirthreatModel;
 	airThreat->setThreatPosition(1.0, 1.0);
 	airThreat->setThreatTargetPosition(10.0, 10.0);
-
+	
+	
 	// binding message
 	function<void(shared_ptr<NOM>)> msgProcessor;
 	msgProcessor = bind(&ATSModelManager::processStartMsg, this, placeholders::_1);
